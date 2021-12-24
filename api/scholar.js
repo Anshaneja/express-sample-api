@@ -2,17 +2,6 @@ const express = require("express");
 const OurApp = express.Router();
 const axios = require('axios').default;
 const cheerio = require('cheerio');
-// router.get("/", async (req, res) => {
-//   try {
-//     res.json({
-//       status: 200,
-//       message: "Get data has successfully",
-//     });
-//   } catch (error) {
-//     console.error(error);
-//     return res.status(500).send("Server error");
-//   }
-// });
 
 // function which gets the data and returns object of data
 const getData = async function(id){

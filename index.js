@@ -1,5 +1,6 @@
 const express = require('express');
-const product = require("./api/product");
+const scholar = require("./api/scholar");
+const database = require("./api/database");
 const app = express();
 
 const cors = require('cors');
@@ -10,7 +11,8 @@ app.use(express.json({ extended: false }));
 const PORT = process.env.PORT || 5000;
 
 
-app.use("/api/product", product);
+app.use("/api/scholar", scholar);
+app.use("/api/database" , database );
 
 
 app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
